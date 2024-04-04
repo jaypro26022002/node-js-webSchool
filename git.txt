@@ -1,0 +1,6 @@
+git init 
+git add .
+git commit -m 'npm nodejs'
+git remote add origin https://github.com/jaypro26022002/node-js-webSchool.git
+(copy tren github khac brand thi len coi)
+git push origin master

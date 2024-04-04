@@ -1,0 +1,19 @@
+**down node js
+1 trang option (https://nodejs.org/en/blog/release/v14.17.6)
+2 link down cho window 64bit (https://nodejs.org/dist/v14.17.6/node-v14.17.6-x64.msi)
+- kiểm tra down phiên bản đúng 14.17.6 
+
+**mở xamp 
+import file data SQL -> users vào SQLmyPHP
+mở thanh terminal: ctrl + `
++ ghi dòng 
++ npm init (khởi tạo npm)
++ npm install (tải file node_modules)
++ npm start (khởi động nodemon server)
+ 
+ **các folder
+ + views: chứa giao diện trang ejs(html)
+ + public: chứa css,js,image 
+ + configs: chứa file kết nối data lên SQL connect.BD(sửa 'database' để chuyển data khác nếu cần)
+ + controller: chứa các chức năng để liên kết các file,Thêm,sửa,xóa
+ + route: chứa các đường dẫn của các trang

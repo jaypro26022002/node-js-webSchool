@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="css/admin.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+<script>
+    import pool from "../configs/connectDB"
+</script>
+
+<body>
+    <h1>Danh sách đăng ký tư vấn</h1>
+    <button class="btn-submit header">
+        <span class="submit_form"><a href="/lienhe">Trang chủ</a></span>
+    </button>
+
+    <table border="1">
+        <thead>
+            <th>Họ tên phụ huynh</th>
+            <th>Số điện thoại</th>
+            <th>Email</th>
+            <th>Họ tên của bé</th>
+            <th>Ngày sinh của bé</th>
+            <th>Chương trình học</th>
+            <th>Lời nhắn</th>
+        </thead>
+
+        <!-- <%= JSON.stringify(dataUser) %> -->
+
+        <tbody>
+            <% for(let i=0; i < dataUser.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= dataUser[i].nameParent %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].phone %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].email %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].nameStudent %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].time %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].course %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].text %>
+                    </td>
+
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+
+    </table>
+</body>
+
+</html>

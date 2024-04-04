@@ -1,0 +1,24 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Vietnam (VN)">
+<g clip-path="url(#clip0_454_6813)">
+<g id="Clip path group">
+<mask id="mask0_454_6813" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-5" y="0" width="34" height="24">
+<g id="a">
+<path id="Vector" d="M-4.36475 0H28.2035V24H-4.36475V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_454_6813)">
+<g id="Group">
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M-7.79688 0H28.846V24H-7.79688V0Z" fill="#EC0015"/>
+<path id="Vector_3" fill-rule="evenodd" clip-rule="evenodd" d="M16.6439 17.8597L12.3689 14.7331L8.12256 17.8878L9.69706 12.7503L5.45068 9.57686L10.7038 9.52998L12.3355 4.40186L13.9911 9.51592L19.2442 9.52061L15.0217 12.7269L16.6392 17.8644L16.6439 17.8597Z" fill="#FFFF00"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_454_6813">
+<rect width="24" height="24" rx="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

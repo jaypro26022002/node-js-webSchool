@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>HTML Table</h2>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </thead>
+        <%= JSON.stringify(dataUser) %>
+
+            <tbody>
+                <tr>
+                <tr>Jill</tr>
+                <tr>ALice</tr>
+                <tr>50</tr>
+                </tr>
+                <% for(let i=0; i < dataUser.length; i++) { %>
+                    <tr>
+                        <td>
+                            <%= dataUser[i].id %>
+                        </td>
+                        <td>
+                            <%= dataUser[i].FirstName %>
+                        </td>
+                        <td>
+                            <%= dataUser[i].LastName %>
+                        </td>
+                        <td>
+                            <a href="/detail/user/<%= dataUser[i].id %>" target="_blank">Details</a>
+                            <form action="/edit-user/<%= dataUser[i].id %>" method='GET'>
+                                <button type="submit">Edit</button>
+                            </form>
+                            <form action="/delete-user" method='POST'>
+                                <input type="text" hidden value="<%= dataUser[i].id %>" name="userId">
+                                <button type="submit" class="btn-submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <% } %>
+            </tbody>
+    </table>
+    <div class="create-user-container">
+        <form action="/create-new-user" method="POST">
+            <div><b>create a new user:</b></div>
+            <div>
+                <label>First Name</label>
+                <input type="text" name="FirstName">
+            </div>
+            <div>
+                <label>Last Name:</label>
+                <input type="text" name="LastName">
+            </div>
+            <div>
+                <label>Email: </label>
+                <input type="email" name="email">
+            </div>
+            <div>
+                <label>address</label>
+                <input type="text" name="address">
+            </div>
+            <div>
+                <button type="submit" class="btn-submit">Submit</button>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+
+</html>
